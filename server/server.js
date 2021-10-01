@@ -41,7 +41,7 @@ app.use((err, req, res, next) => {
 
 const start = async () => {
   try {
-    await mongoose.connect("mongodb+srv://admin:admin@cluster0.ik9e4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+    await mongoose.connect(process.env.CONSTRING, {
       useNewUrlParser: true, useUnifiedTopology: true,
     });
     app.listen(process.env.PORT || 8082);
