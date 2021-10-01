@@ -15,5 +15,5 @@ deploy:
   app: angular-project-11
   on:
     repo: Sanny232/reactflix
-    branch: main
+    branch: master
   skip_cleanup: 'true'
