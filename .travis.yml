@@ -7,7 +7,7 @@ before_install:
 install: npm install
 branches:
   only:
-    - main
+    - master
 deploy:
   provider: heroku
   api_key:
