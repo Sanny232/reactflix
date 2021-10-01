@@ -1,3 +1,3 @@
 export const config = {
-  url: 'https://react-flix-ff/api'
+  url: 'https://react-flix-ff.herokuapp.com/api'
 }
