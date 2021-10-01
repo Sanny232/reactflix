@@ -1,0 +1,19 @@
+language: node_js
+node_js: 14.17.3
+before_install:
+  - cd server
+  - npm install
+  - cd ..
+install: npm install
+branches:
+  only:
+    - main
+deploy:
+  provider: heroku
+  api_key:
+    secure: BJMHECDDDZBos9Emv7G+4yiBXtHrAlNQ/vC6rkoKGw7fvEGF+AHhhDvAe8JiiBBsessX44JWU9OC2iK3zpGFYCT04HHwGimMjvSc6N6VtybR9UYu/uWGjdLcL4yfFWDhQddg4lrWr9B1dp4Q3FnWfppy32p2VBnytQ8EnrYUs3K/qJbTgXtra1LzDMfTJq0Suq1zX/bwmRCqve2Fgsi7kAtVcGqjgwlZzK//Gr0zHL3XV2kznbQJk/DW3/Y1vgc50Dp0eSDwb4/csHRiO/xeOOrMN4aRFdGPsq6KrOwCcBi+JnG+MT0H0YNKb8iWYylLDmuwq89ibivCLiueODgdWoe+citazDqitZJ5bSOLJ8uSbVd3wRyrQXbiVOQZ+G39XTXTlyGWTvrLlIXZAilbKulGuplvE+dEaFDKw4Cz0psVB9wzTXRvJ1ajaynRyX3JlcE2eRaE0N2xI0pfbbz55YeMitpwxa4UdM3atDA7W/c50BeB53XvPYOYiW7fovEJn0a99Bl+2cEqZeCDn9SLz1yvuUhuovWJIRc+vhm0AM1fAzu4I/aC0cXCdMS7PTatDQ+nz6jOmjnaqbAs0W50bJfuRCclpRgN9k6l9l08Z3F0UiKK+tRM+x6Vy6Txn24ELeLnpJHhk2UfGayyV6L5E0zZQmkXi1pGcSYrBSq0mzw=
+  app: angular-project-11
+  on:
+    repo: Sanny232/reactflix
+    branch: main
+  skip_cleanup: 'true'
