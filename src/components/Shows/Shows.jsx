@@ -52,7 +52,7 @@ const Shows = () => {
 				</Route>
 				<Route path={`${path}/:id/episodes/:season/:number`} component={EpisodePage}/>
 				<Route exact path={`${path}/:id`}>
-					<ShowPage />
+					<ShowPage/>
 				</Route>
 			</Switch>
 		</div>
