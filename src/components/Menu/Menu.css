@@ -1,0 +1,18 @@
+.menu {
+  height: 100vh;
+  width: 100px;
+  z-index: 1;
+  background-color: #111111;
+  position: fixed;
+}
+.menuItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.selected {
+  color: #47f71c;
+}

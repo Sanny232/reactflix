@@ -1,0 +1,10 @@
+h3 {
+  word-break: break-all;
+  min-height: 100px;
+  padding: 2px;
+}
+.showsItem {
+  max-width: 210px;
+  height: 400px;
+  margin: 5px;
+}

@@ -1,0 +1,30 @@
+.inputField {
+  margin-bottom: 20px;
+  position: relative;
+}
+.inputField input {
+  width: 100%;
+  font-size: 17px;
+  padding: 5px;
+  color: white;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid green;
+  background-color: #111;
+}
+.inputField label {
+  color: gray;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.inputField input:focus {
+  outline: none;
+}
+.inputField input:not(:placeholder-shown) + label {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  top: -10px;
+}

@@ -1,0 +1,10 @@
+.showsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.showsImageWrapper {
+  width: 210px;
+  height: 295px;
+  background-color: gray;
+}
