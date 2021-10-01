@@ -21,6 +21,7 @@ export const login = createAsyncThunk('user/login', async ({email, password}, {d
 				return response.data;
 			})
 			.catch(err => {
+				dispatch(setLoading(false));
 				alert(err.data.message);
 			});
 });

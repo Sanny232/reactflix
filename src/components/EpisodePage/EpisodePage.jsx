@@ -37,7 +37,7 @@ const EpisodePage = () => {
         </Info>
         <h1>Watch episode</h1>
         <p>{nickname ? <div>
-          <iframe width="560" height="315" src="http://localhost:8082/video"
+          <iframe width="560" height="315" src="https://react-flix-ff.herokuapp.com/video"
                   frameBorder="0"
                   allow="clipboard-write; encrypted-media;"
                   allowFullScreen>
