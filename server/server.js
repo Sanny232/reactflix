@@ -3,7 +3,6 @@ const path = require('path');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const compression = require('compression');
-const fs = require("fs");
 const {showsRouter} = require("./controllers/showsRouter");
 const {friendsRouter} = require("./controllers/friendsRouter");
 const {profileRouter} = require("./controllers/profileRouter");
